@@ -137,3 +137,9 @@ h2#text{
     font-size: 1.2em;
     color: white;
 }
+
+:root{
+    --primary-color: ##2b1055;
+   --secondary-color:#110720;
+
+}
