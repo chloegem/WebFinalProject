@@ -9,7 +9,7 @@
 </head>
 <body>
 <header>
-    <a href="#"src="Gram.png" class="logo">Logo</a>
+    <a href="#"src="Gram.png" class="logo">Gram</a>
     <ul>
         <li><a href="#" class="active">Home</a></li>
         <li><a href="#">About</a></li>
@@ -24,6 +24,8 @@
    <h2 id="text">Welcome to Gram</h2>
     <!-- <a href="#" id="btn">Explore</a> -->
     <img src="mountains_front.png" id="mountains_front">
+
+    <div class="content"></div>
 </section>
 <div class="sec" id="sec">
     <h2>Hello</h2>
@@ -38,9 +40,9 @@
         Deleniti dignissimos doloribus, voluptatum nostrum delectus exercitationem eum laboriosam nobis provident vitae dolorum voluptate 
         pariatur doloremque officiis tenetur ut dicta quae animi? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt at assumenda 
         tenetur rem cupiditate illo pariatur natus facere! Dolor architecto quaerat reprehenderit quia quas odio voluptatibus excepturi corrupti deserunt odit.</p>
-</div>
+</div class="sec">
 
-<script>
+<script type="text/javascript">
     let stars = document.getElementById('stars');
     let moon = document.getElementById('moon');
     let mountain_behind = document.getElementById('mountain_behind');
@@ -49,17 +51,17 @@
     let btn = document.getElementById('btn');
     let header = document.querySelector('header');
 
-    window.addEventListener('scroll', function(){
-        let value = window.scrollY;
+    window.addEventListener('scroll', function() {
+        var value = window.scrollY;
         stars.style.left = value * 0.25 + 'px';
-        moon.style.top = value * 1.05 + 'px';
-        mountain_behind.style.top = value * 0.5 + 'px';
-        mountain_front.style.top = value * 0 + 'px';
+        moon.style.top = -value * -1.05 + 'px';
+        mountain_behind.style.top = -value * -0.5 + 'px';
+        mountain_front.style.top = -value * 0 + 'px';
         text.style.marginRight = value * 4 + 'px';
         text.style.marginTop = value * 1.5 + 'px';
         btn.style.marginTop = value * 1.5 + 'px';
-        header.style.top = value * 0.5 + 'px';
-    })
+        header.style.top = -value * -0.5 + 'px';
+    });
 </script>
 </body>
 </html>
