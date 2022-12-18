@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="links_name">Manage Your Profile</span>
+                </a>
+                <span class="tooltip">Manage Your Profile</span>
+            </li>
+            <li class="profile">
+                <div class="profile-details">
+                    <div class="name">Logout Here</div>
+                </div>
+                <i class='bx bx-log-out' id="log_out"></i>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <div class="text">Dashboard</div>
+    </section>
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+
+        closeBtn.addEventListener("click", ()=>{
+            sidebar.classList.toggle("open");
+            menuBtnChange();
+        });
+        
+        function menuBtnChange(){
+            if(sidebar.classList.contains("open")){
+                closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+            }else{
+                closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+            }
+        }
+    </script>
+</body>
+</html>
