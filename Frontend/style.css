@@ -136,11 +136,9 @@ h2#text{
     color: white;
 }
 
-:root{
-    --primary-color: ##2b1055;
-   --secondary-color:#110720;
-   
-
+header ul li:checked + #icon + body{
+background: linear-gradient(#312543,#151f35);
+color: white;
 }
 
 /* RESPONSIVENESS */
