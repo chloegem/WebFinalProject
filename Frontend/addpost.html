@@ -1,0 +1,40 @@
+<html>
+
+    <head>
+        <title>Add Photo</title>
+        <link rel="stylesheet" href="addpost.css">
+    </head>
+
+    <body>
+
+          <div class="card_addPhoto addPhoto_placement">
+            <div>
+              <h1>Add Photo here</h1>
+            </div>
+            <div>
+                <input type="file" class="button-design" id="image">
+            </div>
+            <div>
+              <textarea class="form-control input-design" type="text" id="description"
+                  required></textarea><br>
+                  <label>Description</label>
+              </div>
+            <div>
+            Looks good!
+              </div> 
+            <div>
+              <button id="add_Image" class="button-design">Add Photo</button>
+            </div>
+
+            <div id="response" class="response_font"></div>
+          </div>
+          <br>
+          
+          <script src="logic.js" type="text/javascript"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+          <script src="script.js" type="text/javascript"></script>
+          <script>
+            pages.loadFor("addImage");
+        </script>
+    </body>
+</html>

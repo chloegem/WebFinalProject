@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*{
+    font-family: 'Poppins',sans-serif;
+}
+
+.card_addPhoto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 55%;
+    width: 50%;
+    top: 50%;
+    box-shadow: 0 0 3px 0;
+    background: transparent;
+    backdrop-filter: blur(4px);
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 25px;  
+  }
+
+  .addPhoto_placement{
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+
